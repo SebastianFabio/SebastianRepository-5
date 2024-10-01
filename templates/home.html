@@ -6,5 +6,23 @@
 
 {% block content %}
     <!--page content-->
-    <h1>Home Page</h1>
+    <h1>Movie Reccomendation Form</h1>
+    <p>After taking this form you will know what movie you would like</p>
+    <form action="/response">
+        <label for="genre" class="form-label">Which genre is the best</label>
+        <select class="form-select" id="genre" name=genre">
+            <option>Action</option>
+            <option>Horror</option>
+            <option>Sci-Fi</option>
+            <option>Fantasy</option>
+        </select>
+        <br>
+    
+        <label for="age" class="form-label">Do you like older or newer movies</label>
+        <select multiple class="form-select" id="age" name="age">
+            <option>older</option>
+            <option>newer</option>
+        </select>
+        <button type="submit" class="btn btn-primary mt-3">Submit</button>
+    </form>
 {% endblock %}

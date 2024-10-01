@@ -1,3 +1,29 @@
-#content {
+h1{
+     text-align: center;
+     font-family: Impact;
+     color: orange;
+     background: black;
+}
+
+p{
+     text-align: center;
+     font-style: bold;
+}
+
+label{
      margin-left: 20px;
+}
+
+select{
+     margin-left: 20px;
+}
+
+option{
+     margin-left: 20px;
+}
+
+img{
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
 }

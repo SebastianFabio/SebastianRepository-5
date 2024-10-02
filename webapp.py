@@ -8,8 +8,8 @@ def render_main():
 
 @app.route("/response")
 def render_response():
-    genre = request.args['genre']
-    age = request.args['age']
+    genre = request.args['moviegenre']
+    age = request.args['movieage']
     if genre == 'Action' and age == 'older':
         reply = "You should watch Indiana Jones"
         movimage = "/static/Indiana.jpg"
@@ -35,6 +35,5 @@ def render_response():
         reply = "You should watch Dune"
         movimage = "/static/Dune.jpg"
     return render_template('response.html', response = reply, image = movimage)
-
 if __name__=="__main__":
     app.run(debug=True)
